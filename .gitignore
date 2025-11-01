@@ -1,0 +1,69 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fmt
+*.fot
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+texput.log
+missfont.log
+
+# BibTeX / Biber
+*.bbl
+*.blg
+*-blx.bib
+*.bcf
+*.run.xml
+
+# Beamer
+*.nav
+*.snm
+*.vrb
+
+# Index / Glossary / Acronyms
+*.idx
+*.ilg
+*.ind
+*.ist
+*.glo
+*.glg
+*.gls
+*.glsdefs
+*.acr
+*.acn
+*.alg
+
+# Xelatex/DVIs
+*.dvi
+*.xdv
+
+# TikZ / Externalization
+*.dpth
+*.md5
+*.auxlock
+tikzexternal/
+
+# Minted
+_minted*/
+*.pyg
+
+# latexmk/temporary dirs
+latex.out/
+build/
+auto/
+
+# Editor/OS junk
+*~
+*.swp
+*.swo
+.#*
+.DS_Store
+Thumbs.db
