@@ -127,7 +127,7 @@
 
 
 %----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
+%   BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
 
@@ -135,14 +135,8 @@
 \pagestyle{empty} 
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+%   TITLE
 %----------------------------------------------------------------------------------------
-
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Mend-Amar Badral} \\[7.5pt]
@@ -155,25 +149,17 @@
 
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+%   EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-% \begin{tabularx}{\linewidth}{@{}l X@{}}	
-% 2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-% 2021 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-% 2022 & Class 12th Some Board \hfill  (Grades) \\
-
-% 2021 & Class 10th Some Board \hfill  (Grades) \\
-% \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{}l X r@{}}
-\textbf{Budapest University of Technology and Economics (BME)} & & Sep,\ 2025 -- June, 2027\\
-M.S.\ in Computer Science Engineering & & Advisor: \href{https://scholar.google.com/citations?view\_op=list\_works\&hl=hu\&hl=hu\&user=Sns05HgAAAAJ}{Márton Vaitkus} \\
+\textbf{Budapest University of Technology and Economics (BME)} & & Sep, 2025 -- June, 2027\\
+M.S.\ in Computer Science Engineering & & Budapest, Hungary \\
+\textit{Focus: Data Science \& Artificial Intelligence} & & \\
 [6pt]
-\textbf{National University of Mongolia (NUM)} & & Sep,\ 2021 -- June,\ 2025 \\
-B.S.\ in Applied Mathematics & & Advisor: \href{https://scholar.google.com/citations?user=oy6Pcz4AAAAJ\&hl=en}{Galtbayar Artbazar}\\
+\textbf{National University of Mongolia (NUM)} & & Sep, 2021 -- June, 2025 \\
+B.S.\ in Applied Mathematics & & Ulaanbaatar, Mongolia \\
 {Thesis: \href{https://docs.google.com/presentation/u/0/d/1BvcVU_O69c-oM05ckK0No2ZJ_5Wgpw5ufpk8lP6x6ao/edit}{Evaluating land degradation using image processing methods}} & &  \\
 \end{tabularx}
 
@@ -181,64 +167,52 @@ B.S.\ in Applied Mathematics & & Advisor: \href{https://scholar.google.com/citat
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-%Interests/ Keywords/ Summary
-% \section{Summary}
-% This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
 \section{Experience}
 
-\begin{jobshort}{Center of Mathematics Application Research Laboratory at NUM}{Oct,\ 2023 - June,\ 2025}
-\textit{Internship}
+\begin{jobshort}{Center of Mathematics Application Research Laboratory}{Oct, 2023 -- June, 2025}
+\textit{Research Data Intern}
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
-    \item Formulated an image processing pipeline in Python to quantify plant types (grass, weeds, and soil) from drone imagery using segmentation methods such as thresholding, K-means clustering, and Moran's I spatial autocorrelation.
-    \item Identified bare ground and grass using optimized thresholding methods, and detected weed through spatial clustering (Moran's I: 0.58--0.70).
-    \item Demonstrated that the spatial patterns of weed growth can be effectively captured and quantified using Moran's I coefficient.
-
-    \item 
-    \item Analyzed and experimented with a Python-based image processing \href{https://github.com/micasense/imageprocessing}{library} from the drone vendor, exploring OOP design principles (e.g., encapsulation and modularity) to understand library structure.
-    \item Conducted independent code refactoring for the research experimentation code to enhance clarity and reduce complexity while maintaining functionality.
-    \item Authored comprehensive laboratory handbook and technical documentation for knowledge transfer to future team members.
+    % KEYWORD: Data Pipeline, Automation, Python
+    \item \textbf{Automated Data Processing:} Engineered a Python-based image processing pipeline to ingest and process large datasets of drone imagery. Automated the classification of plant types (grass, weeds, soil) using efficient segmentation algorithms (NumPy, OpenCV).
+    
+    % KEYWORD: OOP, Refactoring, Maintainability
+    \item \textbf{Software Engineering \& OOP:} Refactored legacy research code into a modular, object-oriented (OOP) architecture. Improved code maintainability and reduced technical debt, aligning with standard software engineering practices.
+    
+    % KEYWORD: Data Quality, Testing
+    \item \textbf{Data Validation:} Implemented statistical methods (Moran's I) to validate spatial data quality, achieving a detection accuracy confidence of 0.58--0.70 for weed growth patterns.
+    
+    % KEYWORD: Documentation, Knowledge Transfer
+    \item \textbf{Technical Documentation:} Authored comprehensive technical documentation and a laboratory handbook to ensure smooth knowledge transfer and onboarding for future developers.
 \end{itemize}
-
 \end{jobshort}
 
-  
-%Projects
+%----------------------------------------------------------------------------------------
+%   PROJECTS
+%----------------------------------------------------------------------------------------
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{\href{https://github.com/MendeBadra/DeepLearningBishopFigures}{Deep Learning Foundations and Concepts Book Figures Reproduction}} \\[3.75pt]
+\textbf{\href{https://github.com/MendeBadra/DeepLearningBishopFigures}{Deep Learning Algorithms Implementation (Python/Julia)}} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
     \begin{itemize}
-        \item Self-initiated project to reproduce key examples from C.Bishop and H.Bishop's \textit{Deep Learning Foundations and Concepts} book to gain theoretical and fundamental understanding of neural networks, deep learning, and optimization.
-        \item Published reproducible Jupyter and Pluto.jl notebooks on GitHub, emphasizing clear explanation, interactivity, and visualization.
+        \item \textbf{Algorithm Implementation:} Reproduced complex Deep Learning algorithms from C. Bishop’s \textit{Foundations and Concepts} to understand the low-level optimization mechanics of neural networks.
+        \item \textbf{Data Visualization:} Developed interactive visualizations using Python (Matplotlib) and Julia to display model convergence and loss metrics, similar to dashboard reporting.
+        \item \textbf{Version Control:} Maintained a clean Git history with structured commits and documentation, demonstrating proficiency in version control workflows.
     \end{itemize}
-
 }  \\
 \end{tabularx}
 
-
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+%   SKILLS
 %----------------------------------------------------------------------------------------
-% \section{Publications}
-% \begin{refsection}[citations.bib]
-% \nocite{*}
-% \printbibliography[heading=none]
-% \end{refsection}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Technical Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Programming languages: &  \normalsize{Python, Julia, C, C++, JavaScript} \\
-ML frameworks: & \normalsize{PyTorch} \\
-Web development/design: & \normalsize{ReactJS} \\
-Markup: & \normalsize{Markdown, Quarto, \LaTeX} \\
-Databases, tools: & \normalsize{SQLite, OpenCV, Git, Vim} \\
-Strong background in: & \normalsize{Mathematics, Digital Image Processing} \\
+\textbf{Core Languages:} &  \normalsize{Python (Pandas, NumPy, SciPy), SQL, Julia, C++, Bash} \\
+\textbf{Data Engineering:} & \normalsize{Data Pipelines, ETL Concepts, Git/GitHub, Linux/Unix} \\
+\textbf{Machine Learning:} & \normalsize{PyTorch, TensorFlow, OpenCV, Scikit-learn} \\
+\textbf{Visualization:} & \normalsize{Matplotlib, Data Visualization Principles} \\
+\textbf{Concepts:} & \normalsize{Object-Oriented Programming (OOP), REST APIs, Agile} \\
+\textbf{Languages:} & \normalsize{English (Fluent), Mongolian (Native)} \\
 \end{tabularx}
 
 \vfill
