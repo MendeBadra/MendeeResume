@@ -135,24 +135,31 @@
 \pagestyle{empty} 
 
 %----------------------------------------------------------------------------------------
-%   TITLE
+%   TITLE & CONTACT
 %----------------------------------------------------------------------------------------
 
+% [GUIDE NOTE]: EPFL requires your address. Do not forget to fill this in[cite: 10].
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Mend-Amar Badral} \\[7.5pt]
 \href{https://github.com/MendeBadra}{\raisebox{-0.05\height}\faGithub\ MendeBadra} \ $|$ \ 
 \href{https://www.linkedin.com/in/mend-amar-badral-64217a28a/}{\raisebox{-0.05\height}\faLinkedin\ Mend-Amar Badral} \ $|$ \ 
-\href{https://mendebadra.github.io/}{\raisebox{-0.05\height}\faGlobe \ mendebadra.github.io} \ $|$ \ \\
-\href{mailto:mendamar.badral@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ mendamar.badral@gmail.com} \ $|$ \ \\
-\href{tel:+36 707385744}{\raisebox{-0.05\height}\faMobile \ +36 70 7385 744} \\
+\href{https://mendebadra.github.io/}{\raisebox{-0.05\height}\faGlobe \ mendebadra.github.io} \\
+\href{mailto:mendamar.badral@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ mendamar.badral@gmail.com} \ $|$ \ 
+\href{tel:+36 707385744}{\raisebox{-0.05\height}\faMobile \ +36 70 7385 744} \ $|$ \
+\faMapMarker \ Budapest, Hungary % [Placeholder - Ensure full address is available if requested]
 \end{tabularx}
 
+%----------------------------------------------------------------------------------------
+%   PERSONAL STATEMENT (Required by EPFL Guide [cite: 13, 14])
+%----------------------------------------------------------------------------------------
+\vspace{1em}
+\noindent
+I'm a diligent and hard-working student with a passion for applying computational thinking to the most interesting problems. I aspire to contribute to the advancements in scientific discovery, machine learning and computer vision. I'm an avid Julia enthusiast and Python programmer. 
 
 %----------------------------------------------------------------------------------------
 %   EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-
 \begin{tabularx}{\linewidth}{@{}l X r@{}}
 \textbf{Budapest University of Technology and Economics (BME)} & & Sep, 2025 -- June, 2027\\
 M.S.\ in Computer Science Engineering & & Budapest, Hungary \\
@@ -166,23 +173,22 @@ B.S.\ in Applied Mathematics & & Ulaanbaatar, Mongolia \\
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
-
 \section{Experience}
 
+% [GUIDE NOTE]: Listed reverse chronologically[cite: 18].
 \begin{jobshort}{Center of Mathematics Application Research Laboratory}{Oct, 2023 -- June, 2025}
-\textit{Research Data Intern}
+\textit{Research Undergraduate Intern}
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
-    % KEYWORD: Data Pipeline, Automation, Python
-    \item \textbf{Automated Data Processing:} Engineered a Python-based image processing pipeline to ingest and process large datasets of drone imagery. Automated the classification of plant types (grass, weeds, soil) using efficient segmentation algorithms (NumPy, OpenCV).
-    
-    % KEYWORD: OOP, Refactoring, Maintainability
-    \item \textbf{Software Engineering \& OOP:} Refactored legacy research code into a modular, object-oriented (OOP) architecture. Improved code maintainability and reduced technical debt, aligning with standard software engineering practices.
-    
-    % KEYWORD: Data Quality, Testing
-    \item \textbf{Data Validation:} Implemented statistical methods (Moran's I) to validate spatial data quality, achieving a detection accuracy confidence of 0.58--0.70 for weed growth patterns.
-    
-    % KEYWORD: Documentation, Knowledge Transfer
-    \item \textbf{Technical Documentation:} Authored comprehensive technical documentation and a laboratory handbook to ensure smooth knowledge transfer and onboarding for future developers.
+    \item \textbf{Lab Leadership:} Selected as Undergraduate Lab Lead in final year; coordinated weekly research progress meetings and facilitated communication between students and faculty.
+    \item \textbf{Infrastructure Management:} Managed and maintained the lab computer server infrastructure to ensure availability for team computational tasks.
+    \item \textbf{Research:} Conducted research on image processing techniques to quantify plant types from drone imagery using segmentation methods (thresholding, K-means, Moran's I).
+    \item \textbf{Documentation:} Authored a comprehensive laboratory handbook and technical documentation to standardize onboarding for future researchers.
+    % \item \textbf{Optimization:} Conducted independent code refactoring for research experimentation to enhance clarity and reduce complexity.
+    % \item Responsible for prototyping on image processing techniques to quantify plant types (grass, weeds, and soil) from drone imagery using segmentation methods such as thresholding, K-means clustering, and Moran's I spatial autocorrelation.
+    % \item 
+    % % \item Identified bare ground and grass using optimized thresholding methods, and detected weed distributions through spatial clustering (Moran's I: 0.58–0.70).
+    % \item Demonstrated that the spatial patterns of weed growth can be effectively captured and quantified using Moran's I coefficient.
+    % \item Authored comprehensive laboratory handbook and technical documentation for future team members.
 \end{itemize}
 \end{jobshort}
 
@@ -192,12 +198,11 @@ B.S.\ in Applied Mathematics & & Ulaanbaatar, Mongolia \\
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{\href{https://github.com/MendeBadra/DeepLearningBishopFigures}{Deep Learning Algorithms Implementation (Python/Julia)}} \\[3.75pt]
+\textbf{\href{https://github.com/MendeBadra/DeepLearningBishopFigures}{Deep Learning Foundations and Concepts Book Figures Reproduction}} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
-    \begin{itemize}
-        \item \textbf{Algorithm Implementation:} Reproduced complex Deep Learning algorithms from C. Bishop’s \textit{Foundations and Concepts} to understand the low-level optimization mechanics of neural networks.
-        \item \textbf{Data Visualization:} Developed interactive visualizations using Python (Matplotlib) and Julia to display model convergence and loss metrics, similar to dashboard reporting.
-        \item \textbf{Version Control:} Maintained a clean Git history with structured commits and documentation, demonstrating proficiency in version control workflows.
+    \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+      \item Self-initiated project to reproduce key examples from C.Bishop and H.Bishop’s \textit{Deep Learning Foundations and Concepts} to gain theoretical and fundamental understanding of \textbf{polynomial regression} and \textbf{probability theory} based on early chapters of the book.
+      \item Published reproducible Jupyter and Pluto.jl notebooks on GitHub, emphasizing clear explanation, interactivity, and visualization.
     \end{itemize}
 }  \\
 \end{tabularx}
@@ -205,17 +210,29 @@ B.S.\ in Applied Mathematics & & Ulaanbaatar, Mongolia \\
 %----------------------------------------------------------------------------------------
 %   SKILLS
 %----------------------------------------------------------------------------------------
-\section{Technical Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Core Languages:} &  \normalsize{Python (Pandas, NumPy, SciPy), SQL, Julia, C++, Bash} \\
-\textbf{Data Engineering:} & \normalsize{Data Pipelines, ETL Concepts, Git/GitHub, Linux/Unix} \\
-\textbf{Machine Learning:} & \normalsize{PyTorch, TensorFlow, OpenCV, Scikit-learn} \\
-\textbf{Visualization:} & \normalsize{Matplotlib, Data Visualization Principles} \\
-\textbf{Concepts:} & \normalsize{Object-Oriented Programming (OOP), REST APIs, Agile} \\
-\textbf{Languages:} & \normalsize{English (Fluent), Mongolian (Native)} \\
-\end{tabularx}
+\section{Skills}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+% [GUIDE NOTE]: Relevant skills listed to back up experience[cite: 22].
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Programming Languages:} & Python, Julia, C, C++, R \\
+\textbf{ML Frameworks:} & PyTorch \\
+\textbf{Markup \& Docs:} & Markdown, Quarto, \LaTeX \\
+\textbf{Databases \& Tools:} & SQLite, OpenCV, Git, Vim \\
+\textbf{Theoretical Background:} & Applied Mathematics, Digital Image Processing \\
+\end{tabularx}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \textbf{Core Languages:} &  \normalsize{Python (Pandas, NumPy, SciPy), SQL, Julia, C++, Bash} \\
+% \textbf{Data Engineering:} & \normalsize{Data Pipelines, ETL Concepts, Git/GitHub, Linux/Unix} \\
+% \textbf{Machine Learning:} & \normalsize{PyTorch, TensorFlow, OpenCV, Scikit-learn} \\
+% \textbf{Visualization:} & \normalsize{Matplotlib, Data Visualization Principles} \\
+% \textbf{Concepts:} & \normalsize{Object-Oriented Programming (OOP), REST APIs, Agile} \\
+% \textbf{Languages:} & \normalsize{English (Fluent), Mongolian (Native)} \\
+% \end{tabularx}
+
+% \vfill
+
+
+
+% \center{\footnotesize Last updated: \today}
 
 \end{document}
