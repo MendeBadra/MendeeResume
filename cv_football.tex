@@ -1,0 +1,199 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+%custom bullet points - 
+\usepackage{enumitem}
+\setlist[itemize]{nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=\textendash}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%   BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%   TITLE & CONTACT
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Mend-Amar Badral} \\[7.5pt]
+\href{mailto:mendamar.badral@gmail.com}{\faEnvelope \ mendamar.badral@gmail.com} \ $|$ \ 
+\href{tel:+36 707385744}{\faMobile \ +36 70 7385 744} \ $|$ \
+\faMapMarker \ Budapest, Hungary 
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   OBJECTIVE
+%----------------------------------------------------------------------------------------
+\vspace{1em}
+\noindent
+Student with a background in mathematics and a lifelong passion for football. A reliable individual with competitive futsal experience, focused on accuracy and attention to detail.
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{Budapest University of Technology and Economics} & & 2025 -- 2027\\
+M.S. in Computer Science Engineering & & Budapest, Hungary \\
+
+\textbf{National University of Mongolia} & & 2021 -- 2025 \\
+B.S. in Applied Mathematics & & Ulaanbaatar, Mongolia \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   FOOTBALL BACKGROUND
+%----------------------------------------------------------------------------------------
+\section{Football Background}
+\begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=4pt,label=--]
+    \item \textbf{Semi-Professional Experience:} Spent one year training and competing in the Mongolian Futsal Secondary League as a goalkeeper. Though primarily a substitute, I gained a deep understanding of match preparation, tactical awareness, and the flow of the game from a professional perspective.
+    \item \textbf{General Sport Knowledge:} Extensive knowledge of the Premier League, Serie A, and Champions League. Active follower of European football and the NBA, with a strong ability to identify players and understand their roles on the pitch.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Experience}
+\begin{jobshort}{National University of Mongolia Research Lab}{2023 -- 2025}
+\textit{Lab Lead \& Student Assistant} \hfill 
+\begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+\item \textbf{Data Analysis:} Heavily utilized Python and dataframes to process, clean, and analyze research datasets.
+
+\end{itemize}
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+%   SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Football:} & Deep understanding of rules, player positions, and match events. \\
+\textbf{Reliability:} & Strong record of attendance and meeting deadlines in my university studies. \\
+\textbf{Technology:} & Proficient with smartphones and mobile applications. \\
+\textbf{Languages:} & English (Fluent), Mongolian (Native). \\
+\textbf{Availability:} & Flexible to travel and work during evenings and weekends. \\
+\end{tabularx}
+\end{document}
+% Developers: knowledge in general programming languages: C/C++, C#, R, Java, JavaScript, Python, React, Node.js, HTML, Spring Boot, APIs, or Go and hands-on experience in designing, testing, and implementing solutions, Docker and Linux experience is a plus
