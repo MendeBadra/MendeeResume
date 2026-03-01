@@ -1,5 +1,11 @@
 # MendeeCV (based on autoCV)
 
+## Note:
+- `cv_depops`: for DevOps roles
+- `cv`: Probabbly suitable for research roles.
+- `cv_football`: Suitable for football data analytics works
+
+
 A clean CV template in LaTeX along with a GitHub action that complies the `*.tex` file and publishes a new PDF version when new changes are pushed to the repo
 
 ## Template Design
