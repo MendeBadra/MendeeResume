@@ -54,7 +54,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.92]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -83,7 +83,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{5pt}{5pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -150,7 +150,7 @@
 %----------------------------------------------------------------------------------------
 %   PERSONAL STATEMENT - Tailored for DTA Startup Focus
 %----------------------------------------------------------------------------------------
-\vspace{1em}
+% \vspace{1em}
 \noindent
 % A Computer Science student with a strong foundation in Applied Mathematics, driven by a philosophy of continuous, incremental improvement. I'm on a mission to bridge the gap between theoretical results and functional software, with a focus on Computer Vision and 3D technologies.
 % I'm a diligent and hard-working student with a passion for applying computational thinking to the most interesting of problems. I aspire to contribute to the advancements in scientific discovery, public understanding of mathematics and open-source technologies. I'm an avid Julia enthusiast and Python programmer.
@@ -168,16 +168,13 @@
 
 
 % Computer Science M.Sc.\ student with a background in Applied Mathematics and a strong interest in reliable software systems. Experienced in building automation scripts, working in Linux environments, and integrating simulation and data processing pipelines. I value disciplined work habits, steady technical improvement, and collaborative approach to problem solving.
-
-
-Driven by a problem solving mindset and fueled by  curiosity, I always aspire to develop high quality solutions for the real-world, impactful problems. 
+Driven by a problem solving mindset and fueled by  curiosity, I always aspire to develop genuine solutions for the real-world, impactful problems. 
 
 %----------------------------------------------------------------------------------------
 
 % EDUCATION
 
 %----------------------------------------------------------------------------------------
-
 \section{Education}
 
 \begin{tabularx}{\linewidth}{@{}l X r@{}}
@@ -201,7 +198,7 @@ B.Sc.\ in Applied Mathematics & & Ulaanbaatar, Mongolia \\
 GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 \textit{Supervisor:} \href{https://scholar.google.com/citations?user=oy6Pcz4AAAAJ\&hl=en}{Galtbayar Artbazar} \\
 
-\textit{Thesis: \href{https://drive.google.com/file/d/1GcDefePBMeKzups5SYEcjHAO8btNjAH7/view?usp=sharing}{Evaluating land degradation using image processing methods}} & & \\
+\textit{Thesis:} \href{https://drive.google.com/file/d/1GcDefePBMeKzups5SYEcjHAO8btNjAH7/view?usp=sharing}{Evaluating land degradation using image processing methods} & & \\
 % \textit{\href{https://docs.google.com/presentation/d/1BvcVU_O69c-oM05ckK0No2ZJ_5Wgpw5ufpk8lP6x6ao/edit?usp=sharing}{Presentation}}
 % \textit{Developed a geospatial analysis pipeline to quantify land degradation using drone-captured imagery and statistical diagnostics.}& & \\
 
@@ -213,25 +210,19 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 % EXPERIENCE SECTIONS
 
 %----------------------------------------------------------------------------------------
-
 \section{Experience}
 \begin{jobshort}{Center of Mathematics Application Research Lab}{Oct, 2023 -- June, 2025}
 \textit{Undergraduate Lab Lead \& Research Intern} \hfill 
+
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
 
-\item \textbf{Geospatial QA \& Analysis:} Developed a custom \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{Python program}} using \textbf{pandas} and \textbf{rasterio} to process drone-captured location datasets. Integrated camera and sensor calibration parameters to ensure data accuracy, utilizing Moran's I coefficient for spatial anomaly detection and clustering.
+\item \textbf{Technical Leadership:} Selected as Lab Lead for an 8-student research team; directed weekly seminars to break down complex machine learning and statistical modeling concepts.
 
-\item \textbf{Data Visualization:} Conducted exploratory data analysis (EDA) and visualized complex spatial datasets in \textbf{QGIS} to validate model outputs and identify inconsistencies in land degradation metrics.
+\item \textbf{Spatial Analysis \& Modeling:} Developed a custom Python application to process sensor data and perform statistical diagnostics, utilizing Moran's I coefficient to detect and model spatial clustering in high-dimensional datasets.
 
-\item \textbf{Reproducibility \& Integrity:} Engineered a unified, documented data architecture for research backups, facilitating automated data retrieval and version control. This system ensured the consistency and completeness of large-scale datasets for multi-year research.
+\item \textbf{Simulation:} Modeled logistics workflows in a \href{https://github.com/mendeBadra/RailRoadSim/}{cargo delivery simulation}, identifying operational inefficiencies and projecting a 23\% reduction in overhead costs.
 
-% \item \textbf{Technical Leadership:} Selected as Undergraduate Lab Lead for a team of 8; moderated weekly seminars on machine learning and statistical diagnostics to improve internal data processing workflows.
-
-
-% Presented the results in \textit{The First NUM-Yonsei university Student Workshop on Mathematics and Computing}. 
-%  ensuring reliable batch processing and correctness of the output
-
-% \item \textbf{Seminar:} Participated in \href{https://site.num.edu.mn/dep/am/news/39}{Study Group Mathematics with Industry} where we worked on the problem of \href{https://github.com/mendeBadra/RailRoadSim/}{simulating railroad cargo delivery process} of Ulaanbaatar Railway company for optimizing costs, which revealed a possibility to achieve up to 23\% reduction in costs.
+% \item \textbf{Data Infrastructure:} Architected a unified, well-documented data backup infrastructure, streamlining data retrieval and establishing robust protocols for large-scale research pipelines.
 
 \end{itemize}
 
@@ -247,39 +238,60 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 {\textbf{Deep Learning Foundations and Concepts Book Examples Reproduction}}
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
-  \item Self-initiated project to reproduce key examples from C.~Bishop and H.~Bishop’s 
-  \textit{Deep Learning Foundations and Concepts} to gain theoretical and fundamental 
-  understanding of \textbf{polynomial regression} and \textbf{probability theory}.
-  % \item Published reproducible Jupyter and \href{https://plutojl.org/}{Pluto.jl} notebooks on GitHub, 
-  % emphasizing clear explanation, interactivity, and visualization.
+  \item Implemented polynomial regression models from Bishop \& Bishop's 
+  \textit{Deep Learning Foundations and Concepts} to study 
+  \textbf{overfitting, underfitting, and the bias--variance tradeoff}.
+  
+  \item Generated synthetic datasets and fit models of varying polynomial degree 
+  to analyze how model complexity affects generalization error.
+
+  % \item Built interactive visualizations in \textbf{Julia (Pluto.jl)} to illustrate 
+  % regression curves, training error, and model behavior across degrees.
 \end{itemize}
 
-\noindent
-\href{https://github.com/MendeBadra/aisim2nerfstudio}
-{\textbf{aiSim Data Integration for 3D Gaussian Splatting}}
+\vspace{-1.5em}
+\href{https://youtube.com/shorts/Zz7PUtKdwt4}
+{\textbf{Short Animation: What is a Derivative?}} % Add a link here if you have these hosted on YouTube/GitHub
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+    \item Created a short-form educational video explaining the mathematical concept of derivatives utilizing Python \href{https://docs.manim.community/en/stable/index.html}{Manim} library. Achieved 100 views on the YouTube platform.
+\end{itemize}
 
-  \item Implemented a custom JSON parser to extract and sensor data obtained by aiSim, an autonomous driving simulator, into a nerfstudio format.
+% \href{https://github.com/MendeBadra/aisim2nerfstudio}
+% {\textbf{aiSim Data Integration for 3D Gaussian Splatting}}
+
+% \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+
+%   \item Implemented a custom JSON parser to extract and sensor data obtained by aiSim, an autonomous driving simulator, into a nerfstudio format.
 
   
-\end{itemize}
+% \end{itemize}
 
 
 % }% \\
 
 % \end{tabularx}
 
-\vspace{-1.5em}
+% \noindent
+\section{Awards \& Scholarships}
+% \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+
+ \textbf{Stipendium Hungaricum Scholarship} \hfill Sep, 2025 -- Present 
+
 
 %----------------------------------------------------------------------------------------
 %   SKILLS
 %----------------------------------------------------------------------------------------
+\noindent
+% \vspace{-3.0em}
 \section{Skills}
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Programming:} & Python, Julia, C/C++, R,  MATLAB \\
-\textbf{Tools:} & Docker, Linux, Bash, QGIS, Git, \LaTeX \\
+
+\textbf{Languages:} & English (C1 \href{https://drive.google.com/file/d/1IxH-0NrfMyf-ZqEpQFMrmtcXiDdzc00k/view?usp=sharing}{IELTS 8.0}), Mongolian (native), Hungarian (A2) \\
+\textbf{Programming:} & Python, Bash, Julia, C/C++, R, MATLAB \\
+\textbf{Tools:} & Git, GitHub, Linux, Docker, Manim, \LaTeX \\
+
 \end{tabularx}
 
 \end{document}
