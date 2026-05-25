@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -54,7 +54,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.94]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -97,6 +97,12 @@
 
 %for social icons
 \usepackage{fontawesome5}
+
+% Define a command for the link icon and optionally redefine \href
+\newcommand{\linkicon}{{\footnotesize\faExternalLink*}}
+% Uncomment the following line to automatically add the icon to all \href links
+% \let\oldhref\href
+% \renewcommand{\href}[2]{\oldhref{#1}{#2\linkicon}}
 
 %debug page outer frames
 %\usepackage{showframe}
@@ -150,8 +156,8 @@
 %----------------------------------------------------------------------------------------
 %   PERSONAL STATEMENT - Tailored for DTA Startup Focus
 %----------------------------------------------------------------------------------------
-\vspace{1em}
-\noindent
+% \vspace{1em}
+% \noindent
 % A Computer Science student with a strong foundation in Applied Mathematics, driven by a philosophy of continuous, incremental improvement. I'm on a mission to bridge the gap between theoretical results and functional software, with a focus on Computer Vision and 3D technologies.
 % I'm a diligent and hard-working student with a passion for applying computational thinking to the most interesting of problems. I aspire to contribute to the advancements in scientific discovery, public understanding of mathematics and open-source technologies. I'm an avid Julia enthusiast and Python programmer.
 
@@ -170,14 +176,29 @@
 % Computer Science M.Sc.\ student with a background in Applied Mathematics and a strong interest in reliable software systems. Experienced in building automation scripts, working in Linux environments, and integrating simulation and data processing pipelines. I value disciplined work habits, steady technical improvement, and collaborative approach to problem solving.
 
 % Personal statement
-Driven by a problem solving mindset and fueled by  curiosity, I always aspire to develop solutions for the real-world, impactful problems. 
+Driven by a problem solving mindset and fueled by curiosity, I aspire to develop genuine solutions for the real-world, impactful problems. 
+%----------------------------------------------------------------------------------------
+%   SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\noindent
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Languages:} & English (C1 \href{https://drive.google.com/file/d/1IxH-0NrfMyf-ZqEpQFMrmtcXiDdzc00k/view?usp=sharing}{IELTS 8.0 \linkicon}), Hungarian (A2) \\
+
+\textbf{Programming:} & Python, Bash, Julia, C/C++, R, MATLAB \\
+
+\textbf{Systems \& Tools:} & Linux, Git, GitHub, Docker, SSH, Tailscale, Cron, Kubernetes, \LaTeX \\
+
+\textbf{Technical Areas:} & Networking fundamentals, remote server administration, data analysis, technical documentation, visualization \\
+
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 
 % EDUCATION
 
 %----------------------------------------------------------------------------------------
-
+\vspace{-0.5em}
 \section{Education}
 
 \begin{tabularx}{\linewidth}{@{}l X r@{}}
@@ -201,7 +222,7 @@ B.Sc.\ in Applied Mathematics & & Ulaanbaatar, Mongolia \\
 GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 \textit{Supervisor:} \href{https://scholar.google.com/citations?user=oy6Pcz4AAAAJ\&hl=en}{Galtbayar Artbazar} \\
 
-\textit{Thesis:} \href{https://drive.google.com/file/d/1GcDefePBMeKzups5SYEcjHAO8btNjAH7/view?usp=sharing}{Evaluating land degradation using image processing methods} \\
+\textit{Thesis:} \href{https://heyzine.com/flip-book/ba3096dda3.html}{\textbf{Evaluating land degradation using image processing methods \linkicon}} \\
 % \textit{\href{https://docs.google.com/presentation/d/1BvcVU_O69c-oM05ckK0No2ZJ_5Wgpw5ufpk8lP6x6ao/edit?usp=sharing}{Presentation}} 
 % \href{https://docs.google.com/presentation/d/1BvcVU_O69c-oM05ckK0No2ZJ_5Wgpw5ufpk8lP6x6ao/edit?usp=sharing}{Presented} the results in \\ 
 % \textit{The First NUM-Yonsei university Student Workshop on Mathematics and Computing}
@@ -220,12 +241,15 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 \textit{Undergraduate Research Intern} \hfill 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
 
-    \item \textbf{Technical Documentation:} Authored and maintained comprehensive lab documentation and user guides, enabling onboarding for new students and establishing clear protocols for research operations. Served as Lab Lead for a team of 6-8 students; collaborated to distill and present complex mathematical concepts during weekly seminars.
+    \item \textbf{Programming \& Data Analysis:} Developed a custom \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{Python application \linkicon}}  for processing a total of 1800 multispectral drone imagery dataset capture collected from 5 field areas and calculating vegetation indices and K-means segmentation maps for the vegetation. Utilized multi-threading, made reduction in processing times up to a factor of 5.
 
-    \item \textbf{Data Management:} Architected a unified, well-documented data folder structure for research backups, directly improving data retrieval efficiency and creating written guidelines for future data integration.
+    \item \textbf{Documentation \& Teamwork:} Authored documentation, user guides, and operational procedures for research workflows, improving onboarding and collaboration within a team of 6--8 students.
 
-    \item \textbf{Programming:} Engineered a custom \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{Python program}} for processing drone imagery which is used to obtain the necessary vegetation index from drone imagery data. Worked in the Linux Environment with version control to ensure reproducibility. 
-    \item \textbf{Contributions:} Incorporated an open-source Docker containerized application (OpenDroneMap) for drone orthomosaic processing instead of proprietary software.
+    \item \textbf{System administration:} Maintained remote access to laboratory servers and computers using Tailscale and SSH, managed and distributed SSH keys, configured cronjobs for automated backups, and documented operational procedures.
+
+   
+
+    % \item \textbf{Technology Evaluation:} Integrated Dockerized OpenDroneMap workflows as an open-source alternative to proprietary drone-processing software, working extensively in Linux environments with version control systems.
 
 
 % \item  
@@ -254,27 +278,39 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 %----------------------------------------------------------------------------------------
 \section{Projects}
 
-
 \href{https://github.com/MendeBadra/aisim2nerfstudio}
-{\textbf{aiSim Data Integration for 3D Gaussian Splatting}}
+{\textbf{aiSim Data Integration for 3D Gaussian Splatting \linkicon}}
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
 
-  \item Implemented a JSON parser in Python to analyze and convert complex sensor measurements from aiMotive's \href{https://aimotive.com/aisim}{aiSim} simulation software into a 3D scene representation (\href{https://docs.nerf.studio/}{nerfstudio}) format. 
-  
+  \item Developed a Python-based data integration pipeline to parse and convert complex sensor measurements from aiMotive's \href{https://aimotive.com/aisim}{aiSim} simulation platform into the \href{https://docs.nerf.studio/}{nerfstudio} 3D scene representation format.
+
+  \item Worked with structured JSON parsing, large-scale sensor data processing, and reproducible Linux-based development workflows.
+
 \end{itemize}
 
 \vspace{-1.0em}
-% PROJECT HUNGARIAN MONGOLIAN EDA
-\noindent
-\href{https://github.com/MendeBadra/trustworthy_ai_course}{\textbf{Comparative EDA: Housing Affordability in Hungary vs Mongolia}} 
+\href{https://github.com/MendeBadra/DeepLearningBishopFigures}
+{\textbf{Deep Learning Foundations and Concepts Book Examples Reproduction \linkicon}}
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
-  \item Performed end-to-end exploratory data analysis (EDA) on public datasets from the 
-    \href{https://www.ksh.hu/?lang=en}{Hungarian Central Statistical Office (KSH)} and 
-    \href{https://www.1212.mn/en}{National Statistics Office of Mongolia} to determine:
-    \textit{“How many m\textsuperscript{2} of a new apartment could a monthly average net wage buy, by region and year?”}
+  \item Reproduced polynomial regression experiments from Bishop \& Bishop's \textit{Deep Learning Foundations and Concepts} using Julia notebooks to analyze overfitting and model complexity.
+  % \item Generated synthetic datasets and fit models of varying polynomial degree 
+  % to analyze how model complexity affects tests and training error.
+
+  % \item Built interactive visualizations in \textbf{Julia (Pluto.jl)} to illustrate 
+  % regression curves, training error, and model behavior across degrees.
 \end{itemize}
+% PROJECT HUNGARIAN MONGOLIAN EDA
+% \noindent
+% \href{https://github.com/MendeBadra/trustworthy_ai_course}{\textbf{Comparative EDA: Housing Affordability in Hungary vs Mongolia}} 
+
+% \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+%   \item Performed end-to-end exploratory data analysis (EDA) on public datasets from the 
+%     \href{https://www.ksh.hu/?lang=en}{Hungarian Central Statistical Office (KSH)} and 
+%     \href{https://www.1212.mn/en}{National Statistics Office of Mongolia} to determine:
+%     \textit{“How many m\textsuperscript{2} of a new apartment could a monthly average net wage buy, by region and year?”}
+% \end{itemize}
 
 \noindent
 % \href{https://github.com/MendeBadra/DeepLearningBishopFigures}
@@ -294,19 +330,12 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 
 % \end{tabularx}
 
-% \vspace{-1.5em}
+\vspace{-0.5em}
 
-%----------------------------------------------------------------------------------------
-%   SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\noindent
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Languages:} & English (C1 \href{https://drive.google.com/file/d/1IxH-0NrfMyf-ZqEpQFMrmtcXiDdzc00k/view?usp=sharing}{IELTS 8.0}), Mongolian (native), Hungarian (A2) \\
-\textbf{Programming:} & Python, Bash, Julia, C/C++, R, MATLAB \\
-\textbf{Tools:} & Git, GitHub, Linux, Docker, Kubernetes, \LaTeX \\
+% \noindent
+\section{Awards}
+% \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
 
-\end{tabularx} 
-
+ \textbf{Stipendium Hungaricum Scholarship} \hfill Sep, 2025 
 
 \end{document}
