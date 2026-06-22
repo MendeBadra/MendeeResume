@@ -177,6 +177,7 @@
 
 % Personal statement
 Driven by a problem solving mindset and fueled by curiosity, I aspire to develop genuine solutions for the real-world, impactful problems. 
+%I'm interested in the intersection of machine learning, computer vision and computational mathematics.
 %----------------------------------------------------------------------------------------
 %   SKILLS
 %----------------------------------------------------------------------------------------
@@ -186,9 +187,9 @@ Driven by a problem solving mindset and fueled by curiosity, I aspire to develop
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 \textbf{Languages:} & English (C1 \href{https://drive.google.com/file/d/1IxH-0NrfMyf-ZqEpQFMrmtcXiDdzc00k/view?usp=sharing}{IELTS 8.0 \linkicon}) \\
 
-\textbf{Programming:} & Python, SQL, Bash, Julia, C/C++, R\\
+\textbf{Programming:} & Python, Julia, C/C++, R, SQL\\
 
-\textbf{Tools:} & Linux, Git, Docker, pandas, PyTorch, sklearn, opencv, open3d, Quarto, \LaTeX \\ % TODO: Add Kubernetes here. 
+\textbf{Tools:} & Linux, Bash, Git, OpenCV, pandas, PyTorch, sklearn, open3d, YOLO, Docker, nerfstudio Quarto, \LaTeX \\ % TODO: Add Kubernetes here. 
 
 
 % \textbf{Data Engineering:} & Large-scale data processing, relational databases (MySQL/PostgreSQL), file formats (GeoTIFF, HDF5, Parquet) \\
@@ -251,19 +252,36 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
     
     % \item \textbf{Documentation \& Teamwork:} Authored documentation, and operational procedures for research workflows, improving onboarding and collaboration within a student group.
     
-    % THIS IS THE OLD ONE.
-    \item \textbf{Lab Lead:} Authored and maintained comprehensive lab documentation and user guides, enabling onboarding for new students and establishing clear protocols for research operations. Served as Lab Lead for a team of 6-8 students; collaborated to present complex mathematical concepts during weekly seminars.
+    % % THIS IS THE OLD ONE.
+    % \item \textbf{Lab Lead:} Authored and maintained comprehensive lab documentation and user guides, enabling onboarding for new students and establishing clear protocols for research operations. Served as Lab Lead for a team of 6-8 students; collaborated to present complex mathematical concepts during weekly seminars.
 
-    \item \textbf{Data Management:} Architected a unified, well-documented data folder structure for research backups, directly improving data retrieval efficiency and creating written guidelines for future data integration.
+    % \item \textbf{Data Management:} Architected a unified, well-documented data folder structure for research backups, directly improving data retrieval efficiency and creating written guidelines for future data integration.
 
-    \item \textbf{Research:} Participated in a field survey drone imagery captures. Developed a custom \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{pipeline \linkicon}} for processing drone imagery which is used to obtain the necessary vegetation index from drone imagery data. Worked in the Linux Environment with version control to ensure reproducibility. 
-    \item \textbf{Contributions:} Incorporated an open-source Docker containerized application (OpenDroneMap) for drone orthomosaic processing instead of proprietary software.
+    % \item \textbf{Research:} Participated in a field survey drone imagery captures. Developed a custom \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{pipeline \linkicon}} for processing drone imagery which is used to obtain the necessary vegetation index from drone imagery data. Worked in the Linux Environment with version control to ensure reproducibility. 
+    % \item \textbf{Contributions:} Incorporated an open-source Docker containerized application (OpenDroneMap) for drone orthomosaic processing instead of proprietary software.
 
+    % COMPUTER VISION FOCUS: I LIKE THIS ONE
+
+    % \item \textbf{Programming \& Image processing:} Developed a custom \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{Python command line scripts \linkicon}}  for processing a total of 1800 multispectral drone imagery dataset capture collected from 5 field areas and calculating vegetation indices and K-means segmentation maps for the vegetation. Utilized multi-threading, made reduction in processing times up to a factor of 5. The scripts utilize OpenCV library and the drone image parameters for scientifically accurate vegetation index calculation. Worked in the Linux Environment with version control.
+
+    % MORE INTO just scripting
+
+    \item \textbf{Linux:} Configured and maintained lab server remote access via SSH and Tailscale; managed access keys, automated system backups, and deployed containerized workflows in CLI-driven Linux environments.
+
+    \item \textbf{C/C++ Development:} Built foundational programming knowledge through university coursework, implemented gradient descent algorithm in C/C++.
+    
+    \item \textbf{Scripting:} Developed \href{https://github.com/MendeBadra/BelceeriinDoroitol}{Python CLI tools \linkicon}  for multispectral image processing using OpenCV; implemented multi-threading to cut processing times by 80\% while managing version control in Linux. Obtained highly accurate vegetation index.
+
+    % \item \textbf{Photogrammetry:} Produced photogrammetry outputs using \href{https://opendronemap.org/}{OpenDroneMap \linkicon}, with a focus on achieving high-quality reconstruction results through iterative processing and parameter tuning. 
+    \item \textbf{Infrastructure:} Replaced proprietary processing pipelines with open-source Docker workflows, tuning processing parameters and troubleshooting environment dependencies to ensure reliable execution.
+    
+    \item \textbf{Data Collection:} Participated in a field survey drone imagery captures on pastoral lands of different levels of land degradation. 
+    %Captured site images, wrote detailed description of each land type, worked on data storage, backups of captured imageries.
+    
+    % item I've worked with a professor in National University of Mongolia (Galtbayar Artbazar, https://scholar.google.com/citations?user=oy6Pcz4AAAAJ&hl=en) on the topic of evaluating land degradation from drone imagery captures. Although it's not published work, we worked on obtaining the drone imagery data, data cleaning and analysis. Mostly, we have worked on what's known as vegetation index, which captures which parts of the image has the most vegetation. But the biggest challenge was to quantify the percentage of weeds present in the plantation. Our idea to tackle this problem was to check the spatial distribution and intensity characteristics in order to separate out weeds, because they tend to grow in clusters with very high vegetation index rather than grass which grows in more spread around manner.
     
 
-    % \item \textbf{System administration:} Maintained remote access to laboratory servers and computers using Tailscale and SSH, managed and distributed SSH keys, configured automated backups.
-
-
+     
    
 
     % \item \textbf{Technology Evaluation:} Integrated Dockerized OpenDroneMap workflows as an open-source alternative to proprietary drone-processing software, working extensively in Linux environments with version control systems.
@@ -297,11 +315,12 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 \section{Projects}
 \vspace{-0.5em}
 \href{https://github.com/MendeBadra/aisim2nerfstudio}
-{\textbf{aiSim Data Integration for 3D Gaussian Splatting \linkicon}}
+{\textbf{aiSim LiDAR point cloud sensor fusion for 3D Gaussian Splatting \linkicon}}
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
 
-  \item Developed a sensor fusion pipeline to parse and convert over sensor measurements from aiMotive's \href{https://aimotive.com/aisim}{aiSim \linkicon} ADAS simulation platform into the \href{https://docs.nerf.studio/}{nerfstudio \linkicon} 3D scene representation format. Worked on the camera coordinate system transformation from sensor frame to the world frame. 
+  \item Developed a Python scripts to colorize LiDAR point cloud measurements obtained from aiMotive's \href{https://aimotive.com/aisim}{aiSim \linkicon} vehicle simulation platform to train 3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon}.
+  %sensor fusion pipeline to parse and convert over sensor measurements from aiMotive's \href{https://aimotive.com/aisim}{aiSim \linkicon} vehicle simulation platform into the \href{https://docs.nerf.studio/}{nerfstudio \linkicon} 3D scene representation format. 
 
   % \item Worked with structured JSON parsing, large-scale sensor data processing, and reproducible Linux-based development workflows.
 
@@ -357,6 +376,8 @@ GPA: 3.2/4.0 \textbf{(rank 3/34)}\\
 % }% \\
 
 % \end{tabularx}
+
+% NOTE: I've experience in volunteering for Royal Rangers Mongolia, which is a Christian Scout Ministry for the children. I've participated in organizing camp in 2024. I was an instructor with 4 children where we cook, play and have fun in a survival setting. We slept in tents, made our own fire and participated in construction with woods to create tables, chairs and gates.
 
 \vspace{-1.5em}
 
