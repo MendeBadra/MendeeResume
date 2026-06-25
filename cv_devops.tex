@@ -189,7 +189,7 @@ Driven by a problem solving mindset and fueled by curiosity, I aspire to develop
 
 \textbf{Programming:} & Python, Julia, MATLAB, C/C++, R, SQL\\
 
-\textbf{Tools:} & Linux, Git, Bash, PyTorch, Docker, Quarto, \LaTeX \\ % TODO: Add Kubernetes here. 
+\textbf{Tools:} & Linux, Git, Bash, PyTorch, OpenCV, open3d, Docker, Quarto, SSH, \LaTeX \\ % TODO: Add Kubernetes here. 
 
 % \textbf{Technical interests:} 
 
@@ -266,7 +266,17 @@ GPA: 3.2/4.0 \\ %\textbf{(rank 3/34)}
 
     % \item \textbf{Programming \& Image processing:}
     
-    \item Developed a custom \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{Python command line scripts \linkicon}}  for processing a total of 1800 multispectral drone imagery dataset capture collected from 5 field areas and calculating vegetation indices and K-means segmentation maps for the vegetation. 
+    \item Contributed to the ongoing research effort by developing a \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{drone imagery analysis pipeline \linkicon}} which segments the drone images into vegetation, bare soil, and quantifying presense of weed in the vegetation. The aim of the research project was to reduce reliance on manual field surveys by efficiently analyzing the drone images, this potentially saving hundreds of man-hours of monitoring in Mongolian steppe.
+    
+    \item Gained hands-on experience with drone imagery analysis and AI-based computer vision models in PyTorch. Performed drone image thresholding and segmentation using MATLAB and Julia. Worked within a Linux environment, configured and maintained secure remote access to lab servers via SSH and Tailscale.
+%  access keys, automated system backups, and handled user environment provisioning.
+   
+    
+    % \item 
+    
+    % \item 
+    
+    % for processing a total of 1800 multispectral drone imagery dataset capture collected from 5 field areas and calculating vegetation indices and K-means segmentation maps for the vegetation. 
     % \item Utilized multi-threading, made reduction in processing times up to a factor of 5. The scripts utilize OpenCV library and the drone image parameters for scientifically accurate vegetation index calculation. Worked in the Linux Environment with version control.
 
     % MORE INTO just scripting
@@ -306,11 +316,11 @@ GPA: 3.2/4.0 \\ %\textbf{(rank 3/34)}
    
     \item Architected a unified, documented data storage structure for research backups, directly improving data retrieval efficiency and establishing a data management guidelines for future students.
     
-    \item Containerized data processing pipelines by deploying OpenDroneMap within Docker applications; configured environment dependencies and tuned parameters to ensure reproducible execution across CLI-driven Linux environments.
+    % \item Containerized data processing pipelines by deploying OpenDroneMap within Docker applications; configured environment dependencies and tuned parameters to ensure reproducible execution across CLI-driven Linux environments.
     
     % \item Contributed to spatial cluster and satellite imagery analysis workflows, ensuring data integrity across distinct development and processing environments.
     
-    \item Engaged in field survey data collection and multispectral measurements; gained first-hand insight into ecological data gathering to better design the drone imagery analysis with domain-specific research needs.
+    \item Engaged in field survey data collection and multispectral measurements; gained first-hand insight into ecological data collection to better design the drone imagery analysis pipeline with domain-specific knowledge.
 
 
    
@@ -350,9 +360,12 @@ GPA: 3.2/4.0 \\ %\textbf{(rank 3/34)}
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
 
-  \item Developed a Python scripts to colorize LiDAR point cloud measurements obtained from aiMotive's \href{https://aimotive.com/aisim}{aiSim \linkicon} vehicle simulation platform to train 3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon}.
+  \item Initiated a project to train 3D Gaussian Splatting model from autonomous driving simulation data, under the supervision of Professor M\'arton Vaitkus. Achieved colorization the LiDAR point cloud measurements obtained from \href{https://aimotive.com/aisim}{aiSim \linkicon} simulator using the surround camera images.  
+  % is a JSON parser which translates the camera and the vehicle parameters into a format that's suitable for training 3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon}.  train 3DGS model from ADAS simulation data.
+  %3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon},
+  % heavily utilizing open3d library and 3D optics fundamentals.
   
-  \item Engineered the transformation between 3D world to camera sensor coordinate frame, made the observations into a consistent coordinate convention by keeping track of each 3D data processing softwares. 
+  \item Engineered the transformation between 3D world to camera sensor coordinate frame, made the observations into a consistent coordinate convention by extensive testing and keeping track of each 3D data processing softwares. 
   %sensor fusion pipeline to parse and convert over sensor measurements from aiMotive's \href{https://aimotive.com/aisim}{aiSim \linkicon} vehicle simulation platform into the \href{https://docs.nerf.studio/}{nerfstudio \linkicon} 3D scene representation format. 
 
   % \item Worked with structured JSON parsing, large-scale sensor data processing, and reproducible Linux-based development workflows.
@@ -364,7 +377,7 @@ GPA: 3.2/4.0 \\ %\textbf{(rank 3/34)}
 {\textbf{Deep Learning Foundations and Concepts Book Examples Reproduction \linkicon}}
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
-  \item Reproduced machine learning demonstrations from Bishop \& Bishop's \textit{Deep Learning Foundations and Concepts} using Julia notebooks and utilized innovative interactive sliders with reactivite programming environment using the \href{https://github.com/JuliaPluto/Pluto.jl}{Pluto.jl \linkicon} package.
+  \item Reproduced machine learning demonstrations from Bishop \& Bishop's \textit{Deep Learning Foundations and Concepts} using Julia notebooks with innovative interactive, reactivite programming environment using the \href{https://github.com/JuliaPluto/Pluto.jl}{Pluto.jl \linkicon} package.
   % \item Generated synthetic datasets and fit models of varying polynomial degree 
   % to analyze how model complexity affects tests and training error.
 
