@@ -176,7 +176,7 @@
 % Computer Science M.Sc.\ student with a background in Applied Mathematics and a strong interest in reliable software systems. Experienced in building automation scripts, working in Linux environments, and integrating simulation and data processing pipelines. I value disciplined work habits, steady technical improvement, and collaborative approach to problem solving.
 
 % Personal statement
-Driven by a problem solving mindset and fueled by curiosity, I aspire to develop genuine solutions for the real-world, impactful problems. 
+Driven by a agile mindset and fueled by curiosity, I aspire to develop genuine solutions for the real-world, impactful problems. 
 %I'm interested in the intersection of machine learning, computer vision and computational mathematics.
 %----------------------------------------------------------------------------------------
 %   SKILLS
@@ -185,11 +185,11 @@ Driven by a problem solving mindset and fueled by curiosity, I aspire to develop
 \section{Skills}
 \noindent
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Languages:} & English (C1 \href{https://drive.google.com/file/d/1IxH-0NrfMyf-ZqEpQFMrmtcXiDdzc00k/view?usp=sharing}{IELTS 8.0 \linkicon}) \\
+\textbf{Languages:} & English (C1 \href{https://drive.google.com/file/d/1IxH-0NrfMyf-ZqEpQFMrmtcXiDdzc00k/view?usp=sharing}{IELTS 8.0 \linkicon}) \\%Hungarian (A2) \\
 
 \textbf{Programming:} & Python, Julia, MATLAB, C/C++, R, SQL\\
 
-\textbf{Tools:} & Linux, Git, Bash, PyTorch, OpenCV, open3d, Docker, Quarto, SSH, \LaTeX \\ % TODO: Add Kubernetes here. 
+\textbf{Tools:} & Linux, Git, GitHub Actions, Bash, PyTorch, OpenCV, open3d, Docker, Quarto, SSH, \LaTeX \\ % TODO: Add Kubernetes here. 
 
 % \textbf{Technical interests:} 
 
@@ -266,9 +266,9 @@ GPA: 3.2/4.0 \\ %\textbf{(rank 3/34)}
 
     % \item \textbf{Programming \& Image processing:}
     
-    \item Contributed to the ongoing research effort by developing a \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{drone imagery analysis pipeline \linkicon}} which segments the drone images into vegetation, bare soil, and quantifying presense of weed in the vegetation. The aim of the research project was to reduce reliance on manual field surveys by efficiently analyzing the drone images, this potentially saving hundreds of man-hours of monitoring in Mongolian steppe.
+    % \item Contributed to the ongoing research effort by developing a \href{https://github.com/MendeBadra/BelceeriinDoroitol}{\textbf{drone imagery analysis pipeline \linkicon}} which segments the drone images into vegetation, bare soil, and quantifying presense of weed in the vegetation. The aim of the research project was to reduce reliance on manual field surveys by efficiently analyzing the drone images, thus potentially saving hundreds of man-hours of monitoring in Mongolian steppe.
     
-    \item Gained hands-on experience with drone imagery analysis and AI-based computer vision models in PyTorch. Performed drone image thresholding and segmentation using MATLAB and Julia. Worked within a Linux environment, configured and maintained secure remote access to lab servers via SSH and Tailscale.
+    % \item Gained hands-on experience with drone imagery analysis and AI-based computer vision models in PyTorch. Performed drone image thresholding and segmentation using MATLAB and Julia. Worked within a Linux environment, configured and maintained secure remote access to lab servers via SSH and Tailscale.
 %  access keys, automated system backups, and handled user environment provisioning.
    
     
@@ -297,13 +297,13 @@ GPA: 3.2/4.0 \\ %\textbf{(rank 3/34)}
     
 
     % NOKIA JOB REWRITE
-    % \item Developed \href{https://github.com/MendeBadra/BelceeriinDoroitol}{Python CLI tools \linkicon}  for multispectral drone image processing using OpenCV; implemented multi-threading to cut processing times by 80\% while managing version control. 
+    \item Developed \href{https://github.com/MendeBadra/BelceeriinDoroitol}{Python CLI tools \linkicon}  for multispectral drone image processing using OpenCV; implemented multi-threading to cut processing times by 80\% while managing version control. 
   
-    % \item Contributed to the ongoing research effort to quantifying the land degradation on a scale using drone imagery analysis and further, satellite imagery, obtianing preliminary milestones of reliable calculation of vegetation index, and a method of quantifying weed percentage in the vegetation using spatial cluster analysis method.
+    \item Contributed to the ongoing research effort to quantifying the land degradation on a scale using drone imagery analysis obtaining preliminary milestones of reliable calculation of vegetation index, and a method of quantifying weed percentage in the vegetation using spatial cluster analysis method.
     
     % \item Architected a unified, well-documented data folder structure for research data backups, directly improving data retrieval efficiency and creating written guidelines for future data integration of the drone imagery.
     
-    % \item Replaced proprietary processing pipelines with open-source Docker application called OpenDroneMap, tuned the processing parameters and troubleshooted environment dependencies to ensure reliable execution.
+    \item Replaced proprietary processing pipelines with open-source Docker application called \href{https://opendronemap.org/}{OpenDroneMap \linkicon}, tuned the processing parameters and troubleshooted environment dependencies to ensure reliable output.
     
     % \item Configured and maintained lab server remote access via SSH and Tailscale; managed access keys, automated system backups, and deployed containerized workflows in CLI-driven Linux environments.
   
@@ -355,35 +355,48 @@ GPA: 3.2/4.0 \\ %\textbf{(rank 3/34)}
 \vspace{-0.5em}
 \section{Projects}
 \vspace{-0.5em}
-\href{https://github.com/MendeBadra/aisim2nerfstudio}
-{\textbf{aiSim LiDAR point cloud sensor fusion for 3D Gaussian Splatting \linkicon}}
 
-\begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
-
-  \item Initiated a project to train 3D Gaussian Splatting model from autonomous driving simulation data, under the supervision of Professor M\'arton Vaitkus. Achieved colorization the LiDAR point cloud measurements obtained from \href{https://aimotive.com/aisim}{aiSim \linkicon} simulator using the surround camera images.  
-  % is a JSON parser which translates the camera and the vehicle parameters into a format that's suitable for training 3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon}.  train 3DGS model from ADAS simulation data.
-  %3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon},
-  % heavily utilizing open3d library and 3D optics fundamentals.
-  
-  \item Engineered the transformation between 3D world to camera sensor coordinate frame, made the observations into a consistent coordinate convention by extensive testing and keeping track of each 3D data processing softwares. 
-  %sensor fusion pipeline to parse and convert over sensor measurements from aiMotive's \href{https://aimotive.com/aisim}{aiSim \linkicon} vehicle simulation platform into the \href{https://docs.nerf.studio/}{nerfstudio \linkicon} 3D scene representation format. 
-
-  % \item Worked with structured JSON parsing, large-scale sensor data processing, and reproducible Linux-based development workflows.
-
-\end{itemize}
-
-\vspace{-1.5em}
-\href{https://github.com/MendeBadra/DeepLearningBishopFigures}
+\href{https://mendebadra.github.io/IntroML.jl/sin_func_interpolation_no_pkg_env_need.html}
 {\textbf{Deep Learning Foundations and Concepts Book Examples Reproduction \linkicon}}
 
 \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
-  \item Reproduced machine learning demonstrations from Bishop \& Bishop's \textit{Deep Learning Foundations and Concepts} using Julia notebooks with innovative interactive, reactivite programming environment using the \href{https://github.com/JuliaPluto/Pluto.jl}{Pluto.jl \linkicon} package.
+  \item Reproduced machine learning demonstrations from Bishop \& Bishop's \textit{Deep Learning Foundations and Concepts} using Julia notebooks with innovative interactive, reactivite programming environment using the \href{https://github.com/JuliaPluto/Pluto.jl}{Pluto.jl \linkicon} package. %Deployed as interactive website using GitHub Actions.
   % \item Generated synthetic datasets and fit models of varying polynomial degree 
-  % to analyze how model complexity affects tests and training error.
-
+%   to analyze how model complexity affects tests and training error.
+    
   % \item Built interactive visualizations in \textbf{Julia (Pluto.jl)} to illustrate 
   % regression curves, training error, and model behavior across degrees.
 \end{itemize}
+\vspace{-1.0em}
+% COMPUTER VISION PROJECT
+% \href{https://github.com/MendeBadra/aisim2nerfstudio}
+% {\textbf{aiSim LiDAR point cloud sensor fusion for 3D Gaussian Splatting \linkicon}}
+
+% \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+
+%   \item Initiated a project to train 3D Gaussian Splatting model from autonomous driving simulation data, under the supervision of Professor M\'arton Vaitkus. Achieved colorization the LiDAR point cloud measurements obtained from \href{https://aimotive.com/aisim}{aiSim \linkicon} simulator using the surround camera images.  
+%   % is a JSON parser which translates the camera and the vehicle parameters into a format that's suitable for training 3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon}.  train 3DGS model from ADAS simulation data.
+%   %3D Gaussian Splatting in \href{https://docs.nerf.studio/}{nerfstudio \linkicon},
+%   % heavily utilizing open3d library and 3D optics fundamentals.
+  
+%   \item Engineered the transformation between 3D world to camera sensor coordinate frame, made the observations into a consistent coordinate convention by extensive testing and keeping track of each 3D data processing softwares. 
+%   %sensor fusion pipeline to parse and convert over sensor measurements from aiMotive's \href{https://aimotive.com/aisim}{aiSim \linkicon} vehicle simulation platform into the \href{https://docs.nerf.studio/}{nerfstudio \linkicon} 3D scene representation format. 
+
+%   % \item Worked with structured JSON parsing, large-scale sensor data processing, and reproducible Linux-based development workflows.
+
+% \end{itemize}
+
+% TOGETHERAI API
+\href{https://mendebadra.github.io/posts/togetherai-in-julia/togetherai-in-julia.html}
+{\textbf{Blog post: How to use TogetherAI in Julia \linkicon}}
+\begin{itemize}
+    \item A quick Quarto blog post about using TogetherAI API in Julia programming language. Showcased a usecase of finding the most similar movie to a given movie using cosine similarity for the embeddings. Deployed onto the blog website using GitHub Actions.
+\end{itemize}
+
+
+% \vspace{-1.5em}
+% \href{https://github.com/MendeBadra/DeepLearningBishopFigures}
+
 % COOKIE-CUTTER PROJECT
 % \vspace{-1.5em}
 % \href{https://mendebadra.github.io/posts/bike-sharing-dataset/bike_sharing_dataset_eda.html}
